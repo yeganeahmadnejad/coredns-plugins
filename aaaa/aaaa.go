@@ -21,8 +21,8 @@ func (a AAAA) ServeDNS(ctx context.Context, w dns.ResponseWriter, r *dns.Msg) (i
 
 	m := new(dns.Msg)
 	m.SetReply(r)
-	
-        m.Rcode=3
+	// send NXDOMAIN for AAAA record type
+	m.Rcode = 3
 	w.WriteMsg(m)
 	return 0, nil
 }
