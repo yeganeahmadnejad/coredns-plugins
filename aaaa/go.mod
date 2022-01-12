@@ -1,4 +1,4 @@
-module github.com/snapp-incubator/coredns-plugins/aaaa
+module github.com/yeganeahmadnejad/coredns-plugins/aaaa
 
 go 1.17
 
