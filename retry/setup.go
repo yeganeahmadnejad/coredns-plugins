@@ -8,7 +8,6 @@ import (
 	"github.com/coredns/coredns/core/dnsserver"
 	"github.com/coredns/coredns/plugin"
 	"github.com/miekg/dns"
-
 )
 
 func init() { plugin.Register("retry", setup) }
@@ -109,4 +108,3 @@ func getRCodes(c *caddy.Controller) ([]int, error) {
 
 	return results, nil
 }
-
